@@ -1,0 +1,129 @@
+body {
+    background-color: rgb(255, 225, 57);
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+/*debut top nav*/
+
+ul{  position: fixed;top: 0;}
+ul.topnav {list-style-type: none;margin: 0;margin-top: 10px;padding: 0;overflow: hidden;background-color: #333;}
+ul.topnav {float: left;}
+ul.topnav  a {display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;}
+ul.topnav  a:hover:not(.active) {background-color: #555555;}
+ul.topnav  a.active {background-color: #ff871d}
+ul.topnav .right {float: right;}
+@media screen and (max-width: 600px) {ul.topnav li.right, ul.topnav li {float: none;}}
+  /*fin top nav*/
+
+h1{
+    font-family: "Audiowide", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding-left: 35px;
+
+}
+h2{
+    font-family: Arial, Helvetica, serif;
+    font-size: 15px;
+    font-weight: italic;
+    color: rgb(0, 0, 0);
+    padding-left: 35px;
+
+}
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+h3{    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.regles {
+    position: sticky;
+    float: left;
+    margin-left: 60%;
+    margin-top: 12.5%;
+    margin-right: auto;
+    margin-bottom: 15%;
+    background-color: #ff871d;
+    padding: 15px;
+    width: 400px;
+
+   }
+.centered-element {
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-right: auto;
+    background-color: #ff871d;
+    padding: 15px;
+    width: 300px;
+
+   }
+
+/* debut columns */
+.bateaux-icons {
+    float: left;
+    width: 16.5%;
+    padding: 0px;
+    margin-right: 0px;
+  }
+.row:after {
+    content: "";
+    display:table;
+    clear: both;
+    margin-right: 0px;
+  }
+@media screen and (max-width:600px) {
+}
+/* fin columns */
+
+
+
+
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.centered-form {
+    padding: 15px;
+    margin-left: 80px;
+}
+
+input {
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: #333;
+}
+
+.submit-button {
+    padding: 5px 15px;
+    background: #ccc;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-button:hover {
+    background: #828080;
+}
+
+.submit-button:focus {
+    background: #8d7979;
+}
+
+.form-result {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 10%;
+}

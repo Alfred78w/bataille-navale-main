@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="styles/style.css">
+    <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Bataille navale</title>
+    </head>
+
+<body>
+<div id="menu">
+    <a href="home.html">Home</a>
+    <a href = "create_game.html">Create game</a>
+    <a href = "join_game.html">Join game</a>
+    <a href = "manage_fleet.html">Manage fleet</a>
+    <a href = "play_game.html">Play game</a>
+</div>
+<table>
+    <tr>
+      <th>Vessel</th>
+      <th>Coordinnées</th>
+      <th>Résistance</th>
+      <th>Arme</th>
+      <th>Munitions</th>
+      <th>Rayon d'action</th>
+    </tr>
+    <tr>
+      <td>Cruiser</td>
+      <td>8,10,0</td>
+      <td>6</td>
+      <td>AirMissileLaucher</td>
+      <td>50</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Frigate</td>
+      <td>4,20,0</td>
+      <td>4</td>
+      <td>SurfaceMissileLaucher</td>
+      <td>40</td>
+      <td>30</td>
+    </tr>
+  </table>
+  <input class="submit-button" type="submit" value="Feu!"><br><br>
+  <label for="cible-coordonnées">Coordonnées de la cible:</label><br>
+  <label for="x">X:</label><br>
+    <input type="number" id="x" name="x" required value="0"><br>
+    <label for="y">Y:</label><br>
+    <input type="number" id="y" name="y" required value="0"><br>
+    <label for="z">Z:</label><br>
+    <input type="number" id="z" name="z" required value="0"><br><br>
+</body>
+</html>

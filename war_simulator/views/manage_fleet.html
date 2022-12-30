@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="styles/style.css">
+    <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Bataille navale</title>
+    </head>
+<body>
+<script src="scripts/manage-fleet.js"></script>
+<div id="menu">
+    <a href="home.html">Home</a>
+    <a href = "create_game.html">Create game</a>
+    <a href = "join_game.html">Join game</a>
+    <a href = "manage_fleet.html">Manage fleet</a>
+    <a href = "play_game.html">Play game</a>
+
+</div>
+
+<div class="vertical-container">
+    <div class="form-result" id="manage-fleet-result"></div>
+    <div class="centered-form">
+        <form id="manage-fleet-form">
+            <label for="player-name">Ton pseudo:</label><br>
+            <input type="text" id="player-name" name="player_name" required><br><br>
+            <label for="player-name">Identifiant de la partie:</label><br>
+            <input type="text" id="partie-id" name="partie_id" required><br><br>
+            <input class="submit-button" type="submit" value="Changer ma flotte"><br><br>
+            <label for="vessel">Choisir le type de vaisseau:</label><br><br>
+            <select name="vessel" id="vessel">
+            <option value="cruiser">Cruiser</option>
+            <option value="destroyer">Sestroyer</option>
+            <option value="frigate">Frigate</option>
+            <option value="submarine">Submarine</option>
+            </select><br><br>
+            <label for="x">X:</label><br>
+            <input type="number" id="x" name="x" required value="0"><br>
+            <label for="y">Y:</label><br>
+            <input type="number" id="y" name="y" required value="0"><br>
+            <label for="z">Z:</label><br>
+            <input type="number" id="z" name="z" required value="0"><br><br>
+            <input class="submit-button" type="submit" value="Valider">
+        </form>
+    </div>
+</div>
+</body>
+</html>
+
